@@ -36,7 +36,7 @@ const Signup = () => {
 
     const collectData = async () => {
         
-        let result = await fetch('/register', {
+        let result = await fetch('http://localhost:5000/register', {
             method: "POST",
             body: JSON.stringify({ name, email, password }),
             headers: {

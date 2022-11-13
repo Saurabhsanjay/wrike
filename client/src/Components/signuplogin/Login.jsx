@@ -34,7 +34,7 @@ useEffect(()=>{
 const getLogin= async()=>{
     // console.log(email,password)
 
-    let result = await fetch('/login',{
+    let result = await fetch('http://localhost:5000/login',{
         method:"POST",
         body:JSON.stringify({email,password}),
         headers:{"Content-Type":"application/json"}
